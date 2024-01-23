@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "udew/wsgi.py",
+      "src": "back/wsgi.py",
       "use": "@vercel/python",
       "config": { "maxLambdaSize": "15mb", "runtime": "python3.11" }
     },
@@ -21,7 +21,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "udew/wsgi.py"
+      "dest": "back/wsgi.py"
     }
   ]
 }
